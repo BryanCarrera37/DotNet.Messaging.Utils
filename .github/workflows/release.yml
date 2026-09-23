@@ -88,6 +88,9 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     needs: [build, unit-test, integration-test]
+    permissions:
+      id-token: write
+      contents: read
     defaults:
       run:
         working-directory: src/DotNet.Messaging.Utils
