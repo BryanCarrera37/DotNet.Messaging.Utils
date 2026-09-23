@@ -118,17 +118,17 @@ jobs:
       - name: Pack NuGet package
         run: dotnet pack -c Release /p:PackageVersion=${{ steps.gitversion.outputs.nuGetVersionV2 }} /p:Version=${{ steps.gitversion.outputs.nuGetVersionV2 }} /p:AssemblyVersion=${{ steps.gitversion.outputs.assemblySemVer }} /p:FileVersion=${{ steps.gitversion.outputs.assemblySemFileVer }}
 
-      - name: Nuget Login OIDC
-        uses: NuGet/login@v1
-        id: login
-        with:
-          user: ${{ secrets.NUGET_USER }}
-
       - name: Authenticate to GitHub Package Registry
         run: dotnet nuget add source --username ${{ github.actor }} --password ${{ secrets.GH_PAT }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json"
 
       - name: Push to GitHub Package Registry
         run: dotnet nuget push bin/Release/*.nupkg -k ${{ secrets.GH_PAT }} -s github
 
+      - name: Nuget Login OIDC
+        uses: NuGet/login@v1
+        id: login
+        with:
+          user: ${{ secrets.NUGET_USER }}
+
       - name: Push to NuGet
-        run: dotnet nuget push bin/Release/*.nupkg --skip-duplicate --api-key ${{steps.login.outputs.NUGET_API_KEY}} --source https://api.nuget.org/v3/index.json
+        run: dotnet nuget push bin/Release/*.nupkg --skip-duplicate --api-key ${{ steps.login.outputs.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
