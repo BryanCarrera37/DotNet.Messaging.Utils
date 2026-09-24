@@ -15,6 +15,7 @@
 		<PackageProjectUrl>https://github.com/BryanCarrera37/BryanCM.Messaging.Utils.git</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/BryanCarrera37/BryanCM.Messaging.Utils.git</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
@@ -31,6 +32,7 @@
 
 	<ItemGroup>
 		<None Include="..\..\README.md" Pack="true" PackagePath="\" />
+		<None Include="..\..\LICENSE" Pack="true" PackagePath="LICENSE" />
 		<None Include="..\..\.gitignore" />
 	</ItemGroup>
 </Project>
