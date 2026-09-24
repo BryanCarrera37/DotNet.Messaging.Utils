@@ -1,5 +1,0 @@
-<Solution>
-  <Project Path="DotNet.Messaging.Utils.IntegrationTests/DotNet.Messaging.Utils.IntegrationTests.csproj" />
-  <Project Path="DotNet.Messaging.Utils.UnitTests/DotNet.Messaging.Utils.UnitTests.csproj" />
-  <Project Path="DotNet.Messaging.Utils/DotNet.Messaging.Utils.csproj" />
-</Solution>

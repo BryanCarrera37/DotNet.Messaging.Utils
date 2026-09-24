@@ -1,4 +1,4 @@
-# DotNet.Messaging.Utils
+# BryanCM.Messaging.Utils
 
 **.NET package** that enables certain functionalities for working with **`RabbitMQ`**. These functionalities focus on:
 
@@ -23,9 +23,8 @@
 - **How to contribute to the package?**
 - **Running Tests**
 - **Dependencies**
-  - **DotNet.Messaging.Utils Package**
-  - **DotNet.Messaging.Utils.UnitTests**
-  - **DotNet.Messaging.Utils.IntegrationTests**
+  - **BryanCM.Messaging.Utils.UnitTests**
+  - **BryanCM.Messaging.Utils.IntegrationTests**
 
 ## Glossary
 
@@ -35,10 +34,10 @@
 
 ## How to use the package in an existing project?
 
-1. Search for the **`DotNet.Messaging.Utils`** package using the **NuGet Package Manager**, or run the following command through the **Package Manager** console:
+1. Search for the **`BryanCM.Messaging.Utils`** package using the **NuGet Package Manager**, or run the following command through the **Package Manager** console:
 
    ```
-   Install-Package DotNet.Messaging.Utils
+   Install-Package BryanCM.Messaging.Utils
    ```
 
 1. Once the package is installed, you must set the required values in your configuration file (e.g., `appsettings.json`):
@@ -104,7 +103,7 @@ The possible values are:
 1.  **Clone the repository:**
 
     ```
-    git clone https://github.com/BryanCarrera37/DotNet.Messaging.Utils.git
+    git clone https://github.com/BryanCarrera37/BryanCM.Messaging.Utils.git
     ```
 
 2.  **Create your feature or fix branch:**
@@ -130,12 +129,12 @@ dotnet test
 
 There are currently two test projects:
 
-- **DotNet.Messaging.Utils.UnitTests**; specifically for Unit Tests.
-- **DotNet.Messaging.Utils.IntegrationTests**; specifically for Integration Tests.
+- **BryanCM.Messaging.Utils.UnitTests**; specifically for Unit Tests.
+- **BryanCM.Messaging.Utils.IntegrationTests**; specifically for Integration Tests.
 
 ## Dependencies
 
-### DotNet.Messaging.Utils Package
+### BryanCM.Messaging.Utils Package
 
 - DotNet.Messaging.OAuth
 - BryanCM.AspNet.Utils
@@ -143,14 +142,14 @@ There are currently two test projects:
 - Microsoft.Extensions.Options
 - Microsoft.Extensions.Options.ConfigurationExtensions
 
-### DotNet.Messaging.Utils.UnitTests
+### BryanCM.Messaging.Utils.UnitTests
 
 - coverlet.collector
 - Microsoft.NET.Test.Sdk
 - xunit
 - xunit.runner.visualstudio
 
-### DotNet.Messaging.Utils.IntegrationTests
+### BryanCM.Messaging.Utils.IntegrationTests
 
 - coverlet.collector
 - Microsoft.NET.Test.Sdk

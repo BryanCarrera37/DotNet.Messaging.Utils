@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="BryanCM.Messaging.Utils.IntegrationTests/BryanCM.Messaging.Utils.IntegrationTests.csproj" />
+  <Project Path="BryanCM.Messaging.Utils.UnitTests/BryanCM.Messaging.Utils.UnitTests.csproj" />
+  <Project Path="BryanCM.Messaging.Utils/BryanCM.Messaging.Utils.csproj" />
+</Solution>
